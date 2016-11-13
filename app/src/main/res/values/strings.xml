@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">OnlineArt</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="login_helper_text">We never post without your permission</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="profile_setup_heading">profile setup</string>
+    <string name="placeholder_text">Placeholder text</string>
+    <string name="create_account">Create Account</string>
+    <string name="title">Title</string>
+    <string name="short_desc">SHort description</string>
+    <string name="technique">Technique</string>
+    <string name="placeholder_long">A very long placeholder text to make it multiline</string>
+    <string name="height_title">Height (CM)</string>
+    <string name="width_title">Width (CM)</string>
+    <string name="next">Next</string>
+    <string name="category">category</string>
+    <string name="sale_avail">Available for sale</string>
+    <string name="print_sale">prints for sale</string>
+    <string name="selling_price">Selling price (RS)</string>
+    <string name="prints">Prints (RS)</string>
+    <string name="publish">publish</string>
+    <string name="publish_disclaimer">By publishing your art you agree to our terms and use of policy</string>
+    <string name="following">Following</string>
+    <string name="followers">followers</string>
+    <string name="likes">likes</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="uploads">Uploads</string>
+    <string name="liked">Liked</string>
+    <string name="size">32 x 45 cm</string>
+    <string name="typeOfProduct">Water color, 2016</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="buy">Buy now</string>
+
+    <string-array name="technique_array">
+        <item>Technique 1</item>
+        <item>Technique 2</item>
+        <item>Technique 3</item>
+    </string-array>
+
+</resources>

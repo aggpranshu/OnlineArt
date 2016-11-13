@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextAction"
+        android:layout_below="@+id/mainImage"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/title_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="@string/title"
+                android:textAllCaps="true"
+                android:textColor="@color/toolbar_heading"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_heading"
+                android:paddingBottom="18dp"
+                android:text="Hello"
+                android:textColor="@color/edittext_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/short_desc_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/short_desc"
+                android:textAllCaps="true"
+                android:textColor="@color/toolbar_heading"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/short_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/short_desc_heading"
+                android:maxLines="2"
+                android:paddingBottom="18dp"
+                android:text="@string/placeholder_long"
+                android:textColor="@color/edittext_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/technique_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/short_desc"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/technique"
+                android:textAllCaps="true"
+
+                android:textColor="@color/toolbar_heading"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/dropdown_techniques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/technique_heading"
+                android:entries="@array/technique_array" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dropdown_techniques"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/width_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/width_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/toolbar_heading"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/width"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/width_title"
+                        android:inputType="number"
+                        android:paddingBottom="18dp"
+                        android:text="80"
+                        android:textColor="@color/edittext_color"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/height_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/height_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/toolbar_heading"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/height_title"
+                        android:inputType="number"
+                        android:paddingBottom="18dp"
+                        android:text="80"
+                        android:textColor="@color/edittext_color"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/nextAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/oval_background_green"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:paddingTop="12dp"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
